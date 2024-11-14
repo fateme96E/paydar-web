@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 6vw;
+    background-color: #f9f9f9;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+
+    .logo{
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 0;
+        gap: 1vw;
+        align-items: center;
+        .logoImage{
+            object-fit: contain;
+            height: 4vw;
+            width: fit-content;
+        }
+        h1{
+            font-size: 2vw;
+            color: #279a90;
+        }
+    }
+
+    .links{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3vw;
+        flex-grow: 1;
+        flex-basis: 0;
+
+        a{
+            color: rgb(129, 129, 129);
+            font-size: 1.1vw;
+        }
+    }
+
+    .buttonContainer{
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+        justify-content: end;
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+}
