@@ -1,0 +1,21 @@
+$primary-100: #2E3192;
+$primary-200: #5052A4;
+
+$secondary-100: #00A651;
+$secondary-50: #E0F3EB;
+
+$gray-600: #4F4F4F;
+$gray-500: #686868;
+$gray-500-30: #68686829;
+
+:export {
+    primary-100: $primary-100;
+    primary-200: $primary-200;
+
+    secondary-100: $secondary-100;
+    secondary-50: $secondary-50;
+
+    gray-600: $gray-600;
+    gray-500: $gray-500;
+    gray-500-30: $gray-500-30;
+}

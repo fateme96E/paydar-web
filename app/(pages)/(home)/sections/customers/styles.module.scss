@@ -1,0 +1,64 @@
+
+.customers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vw;
+    padding-bottom: 5vw;
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .customers_bg {
+        width: 100%;
+        min-height: 679px;
+        min-height: 53vw;
+        background-size: cover;
+        background: url('/assets/home/shapes-2.svg') center / cover no-repeat;
+        background-size: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        .list {
+            width: 75%;
+            min-height: 53vw;
+            background-color: #ffffff;
+            display: grid;
+            grid-template-columns: repeat(4, max-content);
+            grid-template-rows: repeat(2, max-content);
+            align-items: start;
+            justify-items: center;
+            justify-content: center;
+            column-gap: 3vw;
+            row-gap: 3.5vw;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .customers {
+        row-gap: 6.3vw;
+        padding-bottom: 20vw;
+    
+        .customers_bg {
+            min-height: unset;
+            background: unset;
+    
+            .list {
+                width: 75%;
+                min-height: unset;
+                align-items: start;
+                justify-items: center;
+                justify-content: center;
+                column-gap: 3vw;
+                row-gap: 3.5vw;
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    } 
+}

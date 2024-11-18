@@ -1,11 +1,10 @@
 'use client'
 
-import { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./global.scss";
 import "./typography.scss"
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import { ThemeProvider, createTheme } from "@mui/material";
+import Footer from "@/app/Components/Footer";
 import { ToastContainer } from "react-toastify";
 
 const theme = createTheme({
@@ -21,18 +20,19 @@ const metadata = {
 createTheme
 
 export default function RootLayout({
-  children,
+    children,
 }) {
-  return (
-    <html lang="en">
-      <body>
-        <AppRouterCacheProvider>
-          <ThemeProvider theme={theme}>
-          <ToastContainer />
-              {children}
-          </ThemeProvider>
-        </AppRouterCacheProvider>
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en">
+            <body>
+                <AppRouterCacheProvider>
+                    <ThemeProvider theme={theme}>
+                    <ToastContainer />
+                        {children}
+                        <Footer />
+                    </ThemeProvider>
+                </AppRouterCacheProvider>
+            </body>
+        </html>
+    );
 }

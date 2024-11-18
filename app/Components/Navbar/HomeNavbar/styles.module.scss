@@ -1,0 +1,77 @@
+@import "@/app/styles/_colors.module.scss";
+
+.container {
+    display: flex;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vw 3.52vw 2vw;
+
+    .menuContainer {
+        display: none;
+    }
+
+    & > ul {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, auto) 33%;
+        font-size: 1.8vw;
+        color: #ffffff;
+        font-weight: 400;
+
+        li {
+            span:hover {
+                cursor: pointer;
+                font-weight: bold;
+            }
+        }
+
+        & > li:last-of-type {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            column-gap: 1vw;
+            color: #000000;
+
+            .icon {
+                width: 3.4vw;
+                height: 3.4vw;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        background-color: #ffffff;
+        justify-content: space-between;
+        align-items: center;
+        padding: unset;
+        height: 18vw;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+    
+        .menuContainer {
+            background-color: rgb(255, 255, 255);
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 3vw;
+
+            .logo {
+                width: 25vw;
+            }
+        }
+
+        & > ul {
+            display: none;
+        }
+    } 
+}

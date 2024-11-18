@@ -1,0 +1,196 @@
+@import "@/app/styles/_colors.module.scss";
+
+.hero {
+    width: 100%;
+    min-height: 56.35vw !important;
+    max-height: 56.35vw !important;
+    background-color: $primary-100;
+    position: relative;
+
+    .blob {
+        height: fit-content;
+        width: 43.61vw;
+        min-height: 55.45vw;
+        max-height: 55.45vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        .logo {
+            width: 29vw;
+            margin-left: 5.8vw;
+        }
+    }
+
+    .shapes {
+        width: 61.64vw;
+        height: 51.5vw;
+        position: absolute;
+        top: 1.18vw;
+        right: 3.52vw;
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 100%;
+
+        .desc {
+            height: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 1.6vw;
+            color: #ffffff;
+
+            h1 {
+                font-size: 2.8vw;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 1.4vw;
+                text-align: justify;
+                line-height: 2.8vw;
+                width: 75%;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .boxes {
+        width: 100%;
+        position: absolute;
+        bottom: -5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 3.5vw;
+
+        .box {
+            background-color: $primary-200;
+            color: #ffffff;
+            width: 20.4vw;
+            height: 18.2vw;
+            box-shadow: 0 7px 33px -2px #0f0f0f40;
+            border-radius: 1.7vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 1.2vw;
+            font-size: 1.6vw;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+
+            div {
+                border: 3px solid #ffffff;
+                border-radius: 0.6vw;
+                width: 9vw;
+                height: 9vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .icon {
+                    font-size: 5vw;
+                }
+            }
+
+            &:hover {
+                cursor: pointer;
+                background-color: #ffffff;
+                color: $primary-200;
+
+                div {
+                    border-color: $primary-200;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    .hero {
+        min-height: 130vw !important;
+        max-height: 130vw !important;
+        padding: 0 7vw;
+        display: flex;
+        flex-direction: column;
+        row-gap: 11vw;
+        margin-top: 18vw;
+    
+        .blob {
+           display: none;
+        }
+    
+        .shapes {
+            background-image: unset !important;
+            width: 100%;
+            height: max-content;
+            position: unset;
+            padding-top: 10vw;
+    
+            .desc {
+                row-gap: 7vw;
+                align-items: center;
+    
+                h1 {
+                    font-size: 4.8vw;
+                    width: 45%;
+                    text-align: center;
+                }
+    
+                p {
+                    font-size: 3.8vw;
+                    line-height: 7vw;
+                    width: 100%;
+                }
+            }
+        }
+    
+        .boxes {
+            position: unset;
+            column-gap: 3.5vw;
+    
+            .box {
+                width: 27vw;
+                height: 34vw;
+                border-radius: 5vw;
+                row-gap: 2vw;
+                font-size: 3.8vw;
+                background-color: $primary-200;
+    
+                div {
+                    border: 3px solid #ffffff;
+                    border-radius: 1.6vw;
+                    width: 14.6vw;
+                    height: 14.6vw;
+    
+                    .icon {
+                        font-size: 10vw;
+                    }
+                }
+
+                span {
+                    width: 55%;
+                    text-align: center;
+                }
+    
+                &:hover {
+                    cursor: pointer;
+                    background-color: #ffffff;
+                    color: $primary-200;
+    
+                    div {
+                        border-color: $primary-200;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@import "@/app/styles/_colors.module.scss";
+
+.aboutUs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    padding: 13.5vw 4.7vw 6.3vw 6.6vw;
+    row-gap: 2.4vw;
+
+    .img {
+        width: 30.7vw;
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .header {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .desc {
+        grid-area: 2 / 2 / 3 / 3;
+
+        & > p {
+            font-size: 1.4vw;
+            text-align: justify;
+            line-height: 2.45vw;
+
+            & > span {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutUs {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        padding: 22vw 7vw 8vw 7vw;
+        row-gap: 3.5vw;
+    
+        .img {
+            display: none;
+        }
+    
+        .header {
+            grid-area: 1 / 2 / 2 / 3;
+            justify-content: center;
+        }
+    
+        .desc {
+            grid-area: 2 / 2 / 3 / 3;
+    
+            & > p {
+                font-size: 3.3vw;
+                line-height: 7.3vw;
+            }
+        }
+    }
+}
