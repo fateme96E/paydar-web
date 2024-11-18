@@ -17,7 +17,8 @@
         min-height: 679px;
         min-height: 53vw;
         background-size: cover;
-        background: url('/assets/home/shapes-2.svg') center / cover no-repeat;
+        background-repeat: no-repeat;
+        background-size: cover;
         background-size: 100%;
         display: flex;
         justify-content: center;
@@ -46,7 +47,7 @@
     
         .customers_bg {
             min-height: unset;
-            background: unset;
+            background: unset !important;
     
             .list {
                 width: 75%;

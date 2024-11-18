@@ -7,7 +7,8 @@ import Hero from "./sections/hero";
 import AboutUs from "./sections/aboutUs";
 import Overview from "./sections/overview";
 import Customers from "./sections/customers";
-import { useEffect } from "react";
+import { useEffect } from 'react';
+
 
 const Home = () => {
 

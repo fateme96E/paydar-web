@@ -3,7 +3,8 @@ import classes from "./styles.module.scss";
 import colors from "@/app/styles/_colors.module.scss";
 import Title from "@/app/components/Title";
 import CustomerCard from "./components/card";
-import defaultAvatar from "@/app/assets/global/defaultAvatar.svg"
+import defaultAvatar from "@/app/assets/global/defaultAvatar.svg";
+import shapes from "@/app/assets/home/shapes-2.svg";
 
 const Customers = () => {
 
@@ -23,7 +24,7 @@ const Customers = () => {
             <div className={classes.header}> 
                 <Title text={'ما'} coloredText={'مشتریان'} color={colors['primary-200']} />
             </div>
-            <div className={classes.customers_bg}> 
+            <div className={classes.customers_bg} style={{background: `url(${shapes.src})`}}> 
                 <div className={classes.list}> 
                     {list.map((customer, index) => (
                         <CustomerCard key={index} {...customer} customerKey={index} />
