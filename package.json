@@ -31,6 +31,7 @@
     "react-jwt": "^1.2.1",
     "react-toastify": "^10.0.5",
     "sass": "^1.77.4",
+    "sharp": "^0.33.5",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7"
   },
