@@ -22,7 +22,7 @@
 
         .box {
             width: 25.35vw;
-            height: 35.35vw;
+            height: 39vw;
             background-color: $secondary-50;
             border-radius: 1.18vw;
             color: #000000;
@@ -38,6 +38,10 @@
                 border-radius: 0.6vw;
                 width: 9vw;
                 height: 9vw;
+                max-width: 9vw;
+                min-width: 9vw;
+                max-height: 9vw;
+                min-height: 9vw;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -90,6 +94,10 @@
                     border-radius: 1.6vw;
                     width: 17vw;
                     height: 17vw;
+                    max-width: 17vw;
+                    min-width: 17vw;
+                    max-height: 17vw;
+                    min-height: 17vw;
     
                     .icon {
                         font-size: 10vw;
