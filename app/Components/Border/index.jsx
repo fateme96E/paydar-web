@@ -8,7 +8,7 @@ const Border = () => {
 
     return (
         <div className={classes.container}>
-            <Image src={line} className={classes.line} alt='dashed-border'/>
+            <Image src={line} className={classes.line} alt='dashed-border' width={100} height={100} loading="lazy"/>
         </div>
     )
 }

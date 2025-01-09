@@ -20,4 +20,6 @@ const CustomerCard = React.memo(({ name, role, score, profile, customerKey }) =>
     </div>
 ));
 
+CustomerCard.displayName = "CustomerCard";
+
 export default CustomerCard;
