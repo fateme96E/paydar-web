@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from "./styles.module.scss";
 import colors from "@/app/styles/_colors.module.scss";
-import Title from "@/app/components/Title";
+import Title from "@/app/Components/Title";
 import { BiSolidNetworkChart } from "react-icons/bi";
 import { TbSettingsShare } from "react-icons/tb";
 import { HiOutlineUserGroup } from "react-icons/hi2";

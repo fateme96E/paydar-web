@@ -1,7 +1,7 @@
 
 import React from "react";
 import classes from "./styles.module.scss";
-import StarRating from "@/app/components/Rating";
+import StarRating from "@/app/Components/Rating";
 import Image from "next/image";
 
 const CustomerCard = React.memo(({ name, role, score, profile, customerKey }) => (

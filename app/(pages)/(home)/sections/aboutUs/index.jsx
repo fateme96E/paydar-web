@@ -2,8 +2,8 @@ import React from 'react';
 import classes from "./styles.module.scss";
 import colors from "@/app/styles/_colors.module.scss";
 import aboutUsImg from "@/app/assets/home/about-us.svg";
-import Border from "@/app/components/Border";
-import Title from "@/app/components/Title";
+import Border from "@/app/Components/Border";
+import Title from "@/app/Components/Title";
 import Image from 'next/image';
 
 const AboutUs = () => {

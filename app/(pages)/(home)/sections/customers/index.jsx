@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from "./styles.module.scss";
 import colors from "@/app/styles/_colors.module.scss";
-import Title from "@/app/components/Title";
-import CustomerCard from "./components/card";
+import Title from "@/app/Components/Title";
+import CustomerCard from "./Components/card";
 import defaultAvatar from "@/app/assets/global/defaultAvatar.svg";
 import shapes from "@/app/assets/home/shapes-2.svg";
 
