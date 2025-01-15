@@ -9,14 +9,14 @@ import shapes from "@/app/assets/home/shapes-2.svg";
 const Customers = () => {
 
     const list = [
-        { name: "علی محمدزاده", role: "مدیر منابع انسانی دیجیکالا", score: 4, profile: defaultAvatar },
         { name: "علی محمدزاده", role: "مدیر منابع انسانی دیجیکالا", score: 5, profile: defaultAvatar },
         { name: "علی محمدزاده", role: "مدیر منابع انسانی دیجیکالا", score: 5, profile: defaultAvatar },
         { name: "علی محمدزاده", role: "مدیر منابع انسانی دیجیکالا", score: 5, profile: defaultAvatar },
-        { name: "علی محمدزاده", role: "مدیر منابع انسانی دیجیکالا", score: 4, profile: defaultAvatar },
-        { name: "علی محمدزاده", role: "مدیر منابع انسانی دیجیکالا", score: 4, profile: defaultAvatar },
         { name: "علی محمدزاده", role: "مدیر منابع انسانی دیجیکالا", score: 5, profile: defaultAvatar },
-        { name: "علی محمدزاده", role: "مدیر منابع انسانی دیجیکالا", score: 3, profile: defaultAvatar },
+        { name: "علی محمدزاده", role: "مدیر منابع انسانی دیجیکالا", score: 5, profile: defaultAvatar },
+        { name: "علی محمدزاده", role: "مدیر منابع انسانی دیجیکالا", score: 5, profile: defaultAvatar },
+        { name: "علی محمدزاده", role: "مدیر منابع انسانی دیجیکالا", score: 5, profile: defaultAvatar },
+        { name: "علی محمدزاده", role: "مدیر منابع انسانی دیجیکالا", score: 5, profile: defaultAvatar },
     ];
 
     return (
